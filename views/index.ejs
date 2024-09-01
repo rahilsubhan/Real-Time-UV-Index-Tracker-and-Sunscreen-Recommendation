@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lisper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+  <h1>Sunscreen Reminder</h1>
+  <div class="card">
+    <p>
+      <%= uv %>
+      <br> 
+      <%= muv %>
+      <br>
+      <% let a = "";
+      if(uv > 3) {a+="ADVISED to PUT ON SUNSCREEN!!"} 
+      else {a += "SUNSCREEN IS'NT NECESSARY"}
+      %>
+      <%= a %>
+    </p>
+  </div>
+  <p class="user">
+    <%= dt %>
+  </p>
+  <p class="user">
+    SAFE RANGE: 0-3
+  </p>
+
+</body>
+
+</html>
