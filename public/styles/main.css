@@ -34,21 +34,15 @@ h1 {
   text-align: center;
   display: flex;
   font-size: 48px;
-  color: rgb(88 199 250 / 0%);
+  color: rgb(75, 119, 140);
   font-family: "Titan One", cursive;
 }
 
 .card:hover {
-  color: rgb(46, 137, 182);
+  color: rgb(91, 149, 178);
   transition: color 1s;
 }
 
-
-/* .card:hover:before,
-.card:hover:after {
-  animation: none;
-  opacity: 0;
-} */
 
 .card::before {
   content: "";
@@ -68,28 +62,7 @@ h1 {
   animation: spin 2.5s linear infinite;
 }
 
-.card::after {
-  position: absolute;
-  content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  opacity: 1;
-  transition: opacity 0.5s;
-  animation: spin 2.5s linear infinite;
-}
+
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
